@@ -323,8 +323,8 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("==============[Cat_Bot]==============")
-      print("     Thanks for TCR and my friend")
+      print("==============[Creator by Ciel]==============")
+      print("Follow my ig @yatogamitohka.1")
       print("=====================================")
       print("mid -> " + prof.mid)
       print("name -> " + prof.displayName)
