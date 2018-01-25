@@ -2841,25 +2841,7 @@ def bot(op):
                             cl.sendText(msg.to,"Error")
                 else:
                     pass
-#----------------------------------
-            elif "Leavegroup " in msg.text.split():
-                ng = msg.text.split().replace("Leavegroup ","")
-                gid = cl.getGroupIdsJoined()
-                if msg.from_ in Creator:
-                    for i in gid:
-                        h = cl.getGroup(i).name
-                if h == ng:
-                cl.sendText(i,"Bot di paksa keluar oleh owner!")
-                cl.leaveGroup(i)
-                ki.leaveGroup(i)
-                kk.leaveGroup(i)
-                kc.leaveGroup(i)
-                cl.sendText(msg.to,"Success left ["+ h +"] group")
-            else:
-                pass
-        else:
-            cl.sendText(msg.to,"Khusus Creator/Admin")
-#----------------------------------
+
             elif "Getcontact " in msg.text:
               if msg.from_ in admin:
                 key = eval(msg.contentMetadata["MENTION"])
