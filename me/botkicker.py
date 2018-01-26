@@ -176,7 +176,7 @@ def bot(op):
                                 kicker.kickoutFromGroup(msg.to,[target])
                                 print (msg.to,[g.mid])
                             except:
-                                ki.sendText(msg.to,"Done")
+                                ki.sendText(msg.to,"")
 #-----------------------------[KICK ALL]-----------------------------#
 
 #----------------------[Masukin Semua SC Yang Ente Pengen Disini]----------------------#
