@@ -364,15 +364,15 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid]
-admin = ["u350cc7408cc6cc82e056ee046131f925"]
-owner = ["u350cc7408cc6cc82e056ee046131f925"]
+admin = ["u83c0edf4fcac8f4baf169d3d69edff71"]
+owner = ["u83c0edf4fcac8f4baf169d3d69edff71"]
 wait = {
     'contact':False,
     'autoJoin':True,
     'autoCancel':{"on":True, "members":1},
     'leaveRoom':False,
     'timeline':True,
-    'autoAdd':False,
+    'autoAdd':True,
     'message':"Thanks for add Me and Add my creator https://line.me/ti/p/%40luw8183j",
     "lang":"JP",
     "comment":"AutoLike by Ciel https://line.me/ti/p/%40luw8183j
@@ -390,12 +390,12 @@ wait = {
     "wblacklist":False,
     "dblacklist":False,
     "qr":False,
-    "welcomemsg":False,
+    "welcomemsg":True,
     "Backup":False,
     "protectionOn":False,
     "winvite":False,
     "pnharfbot":{},
-    "pname":{},
+    "pname":{}Z
     "pro_name":{},
     "tag":False,
     "autorein":True,
