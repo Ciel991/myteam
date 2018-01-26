@@ -69,7 +69,7 @@ kp.login(token="")
 kp.loginResult()
 
 kq =ardan.LINE()
-kq.logintoken="")
+kq.login(token="")
 kq.loginResult()
 
 kr = ardan.LINE()
