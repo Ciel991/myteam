@@ -47,9 +47,12 @@ sys.setdefaultencoding('utf-8')
 #image_path = 'tmp/tmp.jpg'
 
 helpMessage ="""
-════════════════
-   ║śєʟғ Ciel║ɞȏṭ Ciel║
-════════════════
+┏━━ೋ• ❄ •ೋ• ❄ •ೋ━━━┓
+     ❁Creator by ᴄɪᴇʟ❁
+https://line.me/ti/p/~phantom70
+https://line.me/ti/p/%40luw8183j
+Don't Ask me how to make a baby
+┗━━ೋ• ❄ •ೋ• ❄ •ೋ━━━┛
 ║> /pяȏṭєċṭ [ċȏṃṃѧṅԀ קяȏṭєċṭ]
 ║> /śṭєѧʟ [ċȏṃṃѧṅԀ śṭєѧʟ]
 ║> /ɢıғṭ [ċȏṃṃѧṅԀ ɢıғṭ]
