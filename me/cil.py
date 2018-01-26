@@ -61,14 +61,17 @@ kc = ardan.LINE()
 kc.login(token="")
 kc.loginResult()
 
-print "By : TEAM ELITE"
+print "Creator by : Ciel"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage= """\n
 ✴‮✴ETILE MAET : YB
-═╬════════►∆∆
-   ✴‮✴DNAMMOC PLEH ETILE MEAT : YB
-═╬════════► 
+┏━━ೋ• ❄ •ೋ• ❄ •ೋ━━━┓
+     ❁Creator by ᴄɪᴇʟ❁
+https://line.me/ti/p/~phantom70
+https://line.me/ti/p/%40luw8183j
+Don't Ask me how to make a baby
+┗━━ೋ• ❄ •ೋ• ❄ •ೋ━━━┛
 🔘 My name    :  |╬|
 🔘 Bot2 rename:  |╬|
 🔘 Bot3 rename:  |╬|
