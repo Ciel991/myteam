@@ -1,90 +1,90 @@
 # -*- coding: utf-8 -*-
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
+import ardan
+from ardan.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,requests,urllib
 import re,string,os,shutil,urllib2,urllib3,subprocess
 from urllib import urlopen
 import requests,tempfile
 
-cl = LINETCR.LINE()
+cl = ardan.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
-ki = LINETCR.LINE()
+ki = ardan.LINE()
 ki.login(qr=True)
 ki.loginResult()
 
-kk = LINETCR.LINE()
-kk.login(qr=True)
+kk = ardan.LINE()
+kk.login(token="")
 kk.loginResult()
 
-kc = LINETCR.LINE()
-kc.login(qr=True)
+kc = ardan.LINE()
+kc.login(token="")
 kc.loginResult()
 
-kd = LINETCR.LINE()
-kd.login(qr=True)
+kd = ardan.LINE()
+kd.login(token="")
 kd.loginResult()
 
-ke = LINETCR.LINE()
-ke.login(qr=True)
+ke = ardan.LINE()
+ke.login(token="")
 ke.loginResult()
 
-kf = LINETCR.LINE()
-kf.login(qr=True)
+kf = ardan.LINE()
+kf.login(token="")
 kf.loginResult()
 
-kg = LINETCR.LINE()
-kg.login(qr=True)
+kg = ardan.LINE()
+kg.login(token="")
 kg.loginResult()
 
-kh = LINETCR.LINE()
-kh.login(qr=True)
+kh = ardan.LINE()
+kh.login(token="")
 kh.loginResult()
 
-kj = LINETCR.LINE()
-kj.login(qr=True)
+kj = ardan.LINE()
+kj.login(token="")
 kj.loginResult()
 
-kl = LINETCR.LINE()
-kl.login(qr=True)
+kl = ardan.LINE()
+kl.login(token="")
 kl.loginResult()
 
-km = LINETCR.LINE()
-km.login(qr=True)
+km = ardan.LINE()
+km.login(token="")
 km.loginResult()
 
-kn = LINETCR.LINE()
-kn.login(qr=True)
+kn = ardan.LINE()
+kn.login(token="")
 kn.loginResult()
 
-ko = LINETCR.LINE()
-ko.login(qr=True)
+ko = ardan.LINE()
+ko.login(token="")
 ko.loginResult()
 
-kp = LINETCR.LINE()
-kp.login(qr=True)
+kp = ardan.LINE()
+kp.login(token="")
 kp.loginResult()
 
-kq = LINETCR.LINE()
-kq.login(qr=True)
+kq =ardan.LINE()
+kq.logintoken="")
 kq.loginResult()
 
-kr = LINETCR.LINE()
-kr.login(qr=True)
+kr = ardan.LINE()
+kr.login(token="")
 kr.loginResult()
 
-ks = LINETCR.LINE()
-ks.login(qr=True)
+ks = ardan.LINE()
+ks.login(token="")
 ks.loginResult()
 
-kt = LINETCR.LINE()
-kt.login(qr=True)
+kt = ardan.LINE()
+kt.login(token="")
 kt.loginResult()
 
-print "Astrobot"
+print "Created by : Ciel"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -93,16 +93,16 @@ helpMessage ="""
 [😹]Mentionall➡️ Untuk tagsemua member
 [😹]Cek➡️ Untuk cek sider
 [😹]Sider➡️ Untuk mengetahui sider luknut
-[😹]Myastro➡️ Memanggil Astro
-[😹]Pamit➡️ Menyuruh Astro pulang
-[😹]Rest Astro➡️ Menyuruh Astro pulang dari semua grup
-[😹]Speed➡️ Cek Speed Astro
-[😹]Hancurin lagi➡️ Speed Fake astro
-[😹]Turunin➡️ Speed Fake Astro """
+[😹]Join all➡️ Memanggil Astro
+[😹]Dadahvciel➡️ Menyuruh Astro pulang
+[😹]Bye Ciel➡️ Menyuruh Astro pulang dari semua grup
+[😹]Speed➡️ Cek Speed
+[😹]Hancurin lagi➡️ Speed Fake 
+[😹]Turunin➡️ Speed Fake1 """
 
 helpAdmin ="""
 [😹 COMMAND FOR ADMIN 😹]
-[😹]Sweep Astro ➡️ Kick semua member
+[😹]Sweep by ciel ➡️ Kick semua member
 [😹]Nk @target ➡️ Kick Target
 [😹]Tk @target ➡️ Kick Target
 [😹]Ban @target ➡️
@@ -117,7 +117,7 @@ helpAdmin ="""
 [😹] Sensi on/off
 [😹]Kickjoin on/off
 [Creator 👇👇]
-✒ http://line.me/ti/p~mikefs05 """
+✒ https://line.me/ti/p/%40luw8183j"""
 
 KAC=[cl,ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
 mid = cl.getProfile().mid
@@ -147,8 +147,8 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
-admin = ["u8c0c05e9782fbf6776eabd9b5deb3229","u64a735cbdc05ec667b0ee166f7a119a9","u2a95e516ac18551368f62fb9f131a760","uee36a80053c5f5814787d2858422d479","ua87810961d8822889217ef0eb64262cf","",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
-owner = ["ua87810961d8822889217ef0eb64262cf",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
+admin = ["u83c0edf4fcac8f4baf169d3d69edff71","",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
+owner = [ "u83c0edf4fcac8f4baf169d3d69edff71",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
 wait = {
     'contact':False,
     'autoJoin':False,
@@ -157,10 +157,10 @@ wait = {
     "kickJoin":False,
     "alwayRead":False,
     'timeline':True,
-    'autoAdd':False,
-    'message':"Thanks for add me Follow my insragram https://instagram.com/michaelf.s",
+    'autoAdd':True,
+    'message':"Thanks for add me Follow my insragram https://instagram.com/yatogamitohka.1 and Add my creator : https://line.me/ti/p/%40luw8183j",
     "lang":"JP",
-    "comment":"AutoLike by Astrobot",
+    "comment":"AutoLike by Team Elite",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
@@ -2338,27 +2338,27 @@ def bot(op):
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '1'}
                 msg.text = None
                 cl.sendMessage(msg)
-            elif msg.text in ["Astro1 gift","Astro1gift"]:
+            elif msg.text in ["Ciel1 gift","ciel1gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '2'}
                 msg.text = None
                 ki.sendMessage(msg)
-            elif msg.text in ["Astro2 gift","Astro2gift"]:
+            elif msg.text in ["Ciel2 gift","Ciel2gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '3'}
                 msg.text = None
                 kk.sendMessage(msg)
-            elif msg.text in ["Astro3 gift","Astro3gift"]:
+            elif msg.text in ["Ciel3 gift","Ciel3gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '4'}
                 msg.text = None
                 kc.sendMessage(msg)
-            elif msg.text in ["Astro4 gift","Astro4gift"]:
+            elif msg.text in ["Ciel4 gift","Ciel4gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '5'}
                 msg.text = None
                 kd.sendMessage(msg)
-            elif msg.text in ["Astro5 gift","Astro5gift"]:
+            elif msg.text in ["Ciel5 gift","Ciel5gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}
                 msg.text = None
@@ -2698,7 +2698,7 @@ def bot(op):
                         uye.sendText(msg.to,"Can not be used outside the group")
                     else:
                         uye.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Astro1 link on"]:
+            elif msg.text in ["Ciel1 link on"]:
                 if msg.toType == 2:
                     X = ki.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -2712,7 +2712,7 @@ def bot(op):
                         ki.sendText(msg.to,"Can not be used outside the group")
                     else:
                         ki.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Astro2 link on"]:
+            elif msg.text in ["Ciel2 link on"]:
                 if msg.toType == 2:
                     X = kk.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -2742,7 +2742,7 @@ def bot(op):
                         uye.sendText(msg.to,"Can not be used outside the group")
                     else:
                         uye.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Astro1 link off"]:
+            elif msg.text in ["Ciel1 link off"]:
                 if msg.toType == 2:
                     X = ki.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -2756,7 +2756,7 @@ def bot(op):
                         ki.sendText(msg.to,"Can not be used outside the group")
                     else:
                         ki.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Astro2 link off"]:
+            elif msg.text in ["Ciel2 link off"]:
                 if msg.toType == 2:
                     X = kk.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -2870,21 +2870,21 @@ def bot(op):
 				kr.sendText(msg.to,(bctxt))
 				ks.sendText(msg.to,(bctxt))
 				kt.sendText(msg.to,(bctxt))
-            elif "Astro say " in msg.text:
-				saytxt = msg.text.replace("Astro say ","")
+            elif "Ciel say " in msg.text:
+				saytxt = msg.text.replace("Ciel say ","")
 				ki.sendText(msg.to,(saytxt))
-            elif "Astro say " in msg.text:
-				saytext = msg.text.replace("Astro say ","")
+            elif "Ciel say " in msg.text:
+				saytext = msg.text.replace("Ciel say ","")
 				kk.sendText(msg.to,(saytext))
                 
 #======================================
             elif "Tl: " in msg.text:
                 tl_text = msg.text.replace("Tl: ","")
                 cl.sendText(msg.to,"line://home/post?userMid="+mid+"&postId="+cl.new_post(tl_text)["result"]["post"]["postInfo"]["postId"])
-            elif "Astro tl: " in msg.text:
+            elif "Ciel tl: " in msg.text:
                 tl_text = msg.text.replace("Astro tl: ","")
                 ki.sendText(msg.to,"line://home/post?userMid="+mid+"&postId="+ki.new_post(tl_text)["result"]["post"]["postInfo"]["postId"])
-            elif "Astro tl: " in msg.text:
+            elif "Ciel tl: " in msg.text:
                 tl_text = msg.text.replace("Astro tl: ","")
                 kk.sendText(msg.to,"line://home/post?userMid="+mid+"&postId="+kk.new_post(tl_text)["result"]["post"]["postInfo"]["postId"])
             elif msg.text in ["Protect:on","Protect on"]:
@@ -2956,19 +2956,19 @@ def bot(op):
             elif msg.text in ["Sensi on","S:on"]:
               if msg.from_ in owner:   
                  wait["alwayRead"] = True
-                 cl.sendText(msg.to,"Sensi on Tuan")
+                 cl.sendText(msg.to,"Sensi on Ciel")
             elif msg.text in ["Sensi off","S:off"]:
               if msg.from_ in owner:
                  wait["alwayRead"] = False
-                 cl.sendText(msg.to,"Sensi off Tuan")
+                 cl.sendText(msg.to,"Sensi off Ciel")
             elif msg.text in ["Kickjoin on"]:
                if msg.from_ in owner:  
                  wait["kickJoin"] = True
-                 cl.sendText(msg.to,"Kita kick yang join")
+                 cl.sendText(msg.to,"You can't join in group")
             elif msg.text in ["Kickjoin off"]:
                if msg.from_ in owner:
                  wait["kickJoin"] = False
-                 cl.sendText(msg.to,"Selesai Tugas Astro")
+                 cl.sendText(msg.to,"You can join in group")
 #=======================================================
 					
             elif "Blockinvite:on" == msg.text:
@@ -2981,138 +2981,138 @@ def bot(op):
 					cl.sendText(msg.to,"ƤƦƠƬЄƇƬ ƖƝƔƖƬƛƬƖƠƝ ƠƑƑ")
 				except:
 					pass
-            elif "Cn: " in msg.text:
-                string = msg.text.replace("Cn: ","")
+            elif "Ciel" in msg.text:
+                string = msg.text.replace("Ciel","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = cl.getProfile()
                     profile.displayName = string
                     cl.updateProfile(profile)
-                    cl.sendText(msg.to,"Name " + string + " Selesai Kipak!")
+                    cl.sendText(msg.to,"Name " + string + " Selesai Ciel")
             elif msg.text in ["Invite:on"]:
             	if msg.from_ in admin:
                  wait["winvite"] = True
                  cl.sendText(msg.to,"send contact")
-            elif "Astro1 rename: " in msg.text:
-                string = msg.text.replace("Astro1 rename: ","")
+            elif "Ciel1" in msg.text:
+                string = msg.text.replace("Ciel1","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ki.getProfile()
                     profile_B.displayName = string
                     ki.updateProfile(profile_B)
-                    ki.sendText(msg.to,"Name " + string + " Selesai Kipak!")
-            elif "Astro2 rename: " in msg.text:
-                string = msg.text.replace("Astro2 rename: ","")
+                    ki.sendText(msg.to,"Name " + string + " Selesai Ciel")
+            elif "Ciel2" in msg.text:
+                string = msg.text.replace("Ciel2","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kk.getProfile()
                     profile_B.displayName = string
                     kk.updateProfile(profile_B)
-                    kk.sendText(msg.to,"Name " + string + "Selesai Kipak!")
-            elif "Astro3 rename: " in msg.text:
-                string = msg.text.replace("Astro3 rename: ","")
+                    kk.sendText(msg.to,"Name " + string + "Selesai Ciel")
+            elif "Ciel3" in msg.text:
+                string = msg.text.replace("Ciel3","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kc.getProfile()
                     profile_B.displayName = string
                     kc.updateProfile(profile_B)
-                    kc.sendText(msg.to,"Name " + string + "Selesai Kipak!")
-            elif "Astro4 rename: " in msg.text:
-                string = msg.text.replace("Astro4 rename: ","")
+                    kc.sendText(msg.to,"Name " + string + "Selesai Ciel")
+            elif "Ciel4" in msg.text:
+                string = msg.text.replace("Ciel4","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kd.getProfile()
                     profile_B.displayName = string
                     kd.updateProfile(profile_B)
-                    kd.sendText(msg.to,"Name " + string + "Selesai Kipak!")
-            elif "Astro5 rename: " in msg.text:
-                string = msg.text.replace("Astro5 rename: ","")
+                    kd.sendText(msg.to,"Name " + string + "Selesai Ciel")
+            elif "Ciel5" in msg.text:
+                string = msg.text.replace("Ciel5","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ke.getProfile()
                     profile_B.displayName = string
                     ke.updateProfile(profile_B)
                     ke.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro6 rename: " in msg.text:
-                string = msg.text.replace("Astro6 rename: ","")
+            elif "Ciel6" in msg.text:
+                string = msg.text.replace("Ciel6","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kf.getProfile()
                     profile_B.displayName = string
                     kf.updateProfile(profile_B)
                     kf.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro7 rename: " in msg.text:
-                string = msg.text.replace("Astro7 rename: ","")
+            elif "Ciel7" in msg.text:
+                string = msg.text.replace("Ciel6","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kg.getProfile()
                     profile_B.displayName = string
                     kg.updateProfile(profile_B)
                     kg.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro8 rename: " in msg.text:
-                string = msg.text.replace("Astro8 rename: ","")
+            elif "Ciel8" in msg.text:
+                string = msg.text.replace("Ciel8","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kh.getProfile()
                     profile_B.displayName = string
                     kh.updateProfile(profile_B)
                     kh.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro9 rename: " in msg.text:
-                string = msg.text.replace("Astro9 rename: ","")
+            elif "Ciel9" in msg.text:
+                string = msg.text.replace("Ciel9","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kj.getProfile()
                     profile_B.displayName = string
                     kj.updateProfile(profile_B)
                     kj.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro10 rename: " in msg.text:
-                string = msg.text.replace("Astro10 rename: ","")
+            elif "Ciel10" in msg.text:
+                string = msg.text.replace("Ciel10","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kl.getProfile()
                     profile_B.displayName = string
                     kl.updateProfile(profile_B)
                     kl.sendText(msg.to,"Name " + string + " Done Bosqu")                                
-            elif "Astro11 rename: " in msg.text:
-                string = msg.text.replace("Astro11 rename: ","")
+            elif "Ciel11" in msg.text:
+                string = msg.text.replace("Ciel11","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = km.getProfile()
                     profile_B.displayName = string
                     km.updateProfile(profile_B)
                     km.sendText(msg.to,"Name " + string + " Done Bosqu")                                
-            elif "Astro12 rename: " in msg.text:
-                string = msg.text.replace("Astro12 rename: ","")
+            elif "Ciel12" in msg.text:
+                string = msg.text.replace("Ciel12","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kn.getProfile()
                     profile_B.displayName = string
                     kn.updateProfile(profile_B)
                     kn.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro13 rename: " in msg.text:
-                string = msg.text.replace("Astro13 rename: ","")
+            elif "Ciel13" in msg.text:
+                string = msg.text.replace("Ciel13","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ko.getProfile()
                     profile_B.displayName = string
                     ko.updateProfile(profile_B)
                     ko.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro14 rename: " in msg.text:
-                string = msg.text.replace("Astro14 rename: ","")
+            elif "Ciel14 " in msg.text:
+                string = msg.text.replace("Ciel14","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kp.getProfile()
                     profile_B.displayName = string
                     kp.updateProfile(profile_B)
                     kp.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro15 rename: " in msg.text:
-                string = msg.text.replace("Astro15 rename: ","")
+            elif "Ciel15" in msg.text:
+                string = msg.text.replace("Ciel15","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kq.getProfile()
                     profile_B.displayName = string
                     kq.updateProfile(profile_B)
                     kq.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro16 rename: " in msg.text:
-                string = msg.text.replace("Astro16 rename: ","")
+            elif "Ciel16" in msg.text:
+                string = msg.text.replace("Ciel16","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kr.getProfile()
                     profile_B.displayName = string
                     kr.updateProfile(profile_B)
                     kr.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro17 rename: " in msg.text:
-                string = msg.text.replace("Astro17 rename: ","")
+            elif "Ciel17" in msg.text:
+                string = msg.text.replace("Ciel17","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ks.getProfile()
                     profile_B.displayName = string
                     ks.updateProfile(profile_B)
                     ks.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "Astro18 rename: " in msg.text:
-                string = msg.text.replace("Astro18 rename: ","")
+            elif "Ciel18" in msg.text:
+                string = msg.text.replace("Ciel18","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kt.getProfile()
                     profile_B.displayName = string
@@ -3325,7 +3325,7 @@ def bot(op):
             elif msg.text in ["Backup:on","Backup on"]:
                 if wait["Backup"] == True:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Sudah on Bos\n\n"+ datetime.today().strftime('%H:%M:%S'))
+                        cl.sendText(msg.to,"Sudah on Ciel\n\n"+ datetime.today().strftime('%H:%M:%S'))
                     else:
                         cl.sendText(msg.to,"Backup On\n\n"+ datetime.today().strftime('%H:%M:%S'))
                 else:
@@ -3333,7 +3333,7 @@ def bot(op):
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Backup On\n\n"+ datetime.today().strftime('%H:%M:%S'))
                     else:
-                        cl.sendText(msg.to,"Sudah on Bos\n\n"+ datetime.today().strftime('%H:%M:%S'))
+                        cl.sendText(msg.to,"Sudah on Ciel\n\n"+ datetime.today().strftime('%H:%M:%S'))
             elif msg.text in ["Backup:off","Backup off"]:
                 if wait["Backup"] == False:
                     if wait["lang"] == "JP":
@@ -3354,7 +3354,7 @@ def bot(op):
                     cl.sendText(msg.to,"Semua Spam Undangan Telah Di Tolak")
                 else:
                     cl.sendText(msg.to,"拒绝了全部的邀请。")
-            elif msg.text in ["Astro1 rgroups","Astro1 rgroup"]:
+            elif msg.text in ["Ciel1 rgroups","Ciel1 rgroup"]:
                 gid = ki.getGroupIdsInvited()
                 for i in gid:
                     ki.rejectGroupInvitation(i)
@@ -3460,58 +3460,58 @@ def bot(op):
 #===========================================
             elif msg.text.lower() == 'Responsename':
                 profile = ki.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 ki.sendText(msg.to, text)
                 profile = kk.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kk.sendText(msg.to, text)
                 profile = kc.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kc.sendText(msg.to, text)
                 profile = kd.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kd.sendText(msg.to, text)
                 profile = ke.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 ke.sendText(msg.to, text)
                 profile = kf.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kf.sendText(msg.to, text)
                 profile = kg.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kg.sendText(msg.to, text)
                 profile = kh.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kh.sendText(msg.to, text)
                 profile = kj.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kj.sendText(msg.to, text)
                 profile = kn.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kn.sendText(msg.to, text)
                 profile = ko.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 ko.sendText(msg.to, text)
                 profile = kp.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kp.sendText(msg.to, text)
                 profile = kq.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kq.sendText(msg.to, text)
                 profile = kr.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kr.sendText(msg.to, text)
                 profile = ks.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 ks.sendText(msg.to, text)
                 profile = kt.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kt.sendText(msg.to, text)
                 profile = kl.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 kl.sendText(msg.to, text)
                 profile = km.getProfile()
-                text = profile.displayName + "Astrobot"
+                text = profile.displayName + "Ciel"
                 km.sendText(msg.to, text)
             elif "Rebut qr: " in msg.text:
                 if msg.toType == 2:
@@ -3520,9 +3520,9 @@ def bot(op):
                     cl.sendText(msg.to,"line://ti/g/" + gurl)
                 else:
                     cl.sendText(msg.to,"Not for use less than group")
-            elif "Astro1 gurl: " in msg.text:
+            elif "Ciel1 gurl: " in msg.text:
                 if msg.toType == 2:
-                    gid = msg.text.replace("Astro1 gurl: ","")
+                    gid = msg.text.replace("Ciel1 gurl: ","")
                     x = ki.getGroup(gid)
                     if x.preventJoinByTicket == True:
                         x.preventJoinByTicket = False
@@ -3531,9 +3531,9 @@ def bot(op):
                     ki.sendText(msg.to,"line://ti/g/" + gurl)
                 else:
                     ki.sendText(msg.to,"Not for use less than group")
-            elif "Astro2 gurl: " in msg.text:
+            elif "Ciel2 gurl: " in msg.text:
                 if msg.toType == 2:
-                    gid = msg.text.replace("Astro2 gurl: ","")
+                    gid = msg.text.replace("Ciel2 gurl: ","")
                     x = kk.getGroup(gid)
                     if x.preventJoinByTicket == True:
                         x.preventJoinByTicket = False
@@ -3578,8 +3578,8 @@ def bot(op):
                     wait["clock"] = False
                     cl.sendText(msg.to,"done")
 
-            elif "Cc: " in msg.text:
-                n = msg.text.replace("Cc: ","")
+            elif "Me" in msg.text:
+                n = msg.text.replace("Me","")
                 if len(n.decode("utf-8")) > 13:
                     cl.sendText(msg.to,"changed")
                 else:
@@ -3666,21 +3666,21 @@ def bot(op):
 
 #===============================================
             elif msg.text in ["Spp","SPP"]:
-                cl.sendText(msg.to, "Sebentar Astro...")
+                cl.sendText(msg.to, "Sebentar Ciel...")
                 start = time.time()
                 time.sleep(0.0001)
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 print "[Command]Speed palsu Excuted"
-            elif msg.text in ["zzz","Bot Astro"]:
-                cl.sendText(msg.to, "Sebentar Astro...")
+            elif msg.text in ["zzz","Ciel sp"]:
+                cl.sendText(msg.to, "Sebentar Ciel...")
                 start = time.time()
                 time.sleep(0.00009)
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 print "[Command]Speed palsu executed"
-            elif "Speed Astro" in msg.text:
-                cl.sendText(msg.to, "Sebentar Astro...")
+            elif "Speed Ciel" in msg.text:
+                cl.sendText(msg.to, "Sebentar Ciel...")
                 start = time.time()
                 time.sleep(0.0001)
                 elapsed_time = time.time() - start
@@ -3709,7 +3709,7 @@ def bot(op):
                 print "[Command]Speed palsu executed"
             elif ".speed" in msg.text:
                 time.sleep(0.5)
-                cl.sendText(msg.to, "Capek aku pantek!")
+                cl.sendText(msg.to, "Capek aku Ciel!")
                 start = time.time()
                 time.sleep(2.32)
                 elapsed_time = time.time() - start
@@ -3722,7 +3722,7 @@ def bot(op):
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))
                 print "[Command]Speed asli executed"
 #========================================
-            elif msg.text in ["Kembali ke asli"]:
+            elif msg.text in ["Backup all"]:
                 try:
                     ki.updateDisplayPicture(backup.pictureStatus)
                     ki.updateProfile(backup)
@@ -3760,7 +3760,7 @@ def bot(op):
                     ks.updateProfile(backup)
                     kt.updateDisplayPicture(backup.pictureStatus)
                     kt.updateProfile(backup)
-                    cl.sendText(msg.to, "Backup Astro Sukses")
+                    cl.sendText(msg.to, "Backup Ciel Sukses")
                 except Exception as e:
                     cl.sendText(msg.to, str (e))
 
@@ -3861,27 +3861,27 @@ def bot(op):
 						
 #========================================
 #---------------FUNGSI RATAIN GRUP TANPA KICK SESAMA BOT/Admin/Bots----------#
-            elif "Sweep Astro" in msg.text:
+            elif "Sweep Ciel" in msg.text:
               if msg.from_ in admin:
                 if msg.toType == 2:
                     print "ok"
-                    _name = msg.text.replace("Sweep Astro","")
+                    _name = msg.text.replace("Sweep Ciel","")
                     gs = ki.getGroup(msg.to)
                     gs = kk.getGroup(msg.to)
                     gs = kc.getGroup(msg.to)
                     ki.sendText(msg.to,"1")
                     kk.sendText(msg.to,"2")
                     kc.sendText(msg.to,"3")
-                    ks.sendText(msg.to,"Dark Spear!")
+                    ks.sendText(msg.to,"Add my creator :https://line.me/ti/p/%40luw8183j")
                     msg.contentType = 13
-                    msg.contentMetadata = {'mid': mid}
+                    msg.contentMetadata = {'mid': 'u63b477a73bc4dc8f08dd9a2ae572ad14'}
                     ks.sendMessage(msg)
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        ki.sendText(msg.to,"Dark Spear")
+                        ki.sendText(msg.to,"Dadah culun you die")
                     else:
                         for target in targets:
                           if target not in Bots:
@@ -3891,16 +3891,17 @@ def bot(op):
                                 kicker.kickoutFromGroup(msg.to,[target])
                                 print (msg.to,[g.mid])
                             except:
-                                kl.sendText(msg.to,"Dark Spear!")
-                                km.sendText(msg.to,"Dark Spear!")
-                                kl.sendText(msg.to,"Dark Spear!")
-                                km.sendText(msg.to,"Dark Spear!")
+                                kl.sendText(msg.to,"Dadah culun")
+                                km.sendText(msg.to,"Dadah culun")
+                                kl.sendText(msg.to,"Dadah culun")
+                                km.sendText(msg.to,"Dadah culun")
 #================================================
 #========================================
             elif msg.text.lower() == ["welcome","Wc","Welkam","Welcome"]:
                 ginfo = cl.getGroup(msg.to)
                 cl.sendText(msg.to,"Selamat Datang Di Grup " + str(ginfo.name))
                 cl.sendText(msg.to,"Owner Grup " + str(ginfo.name) + " :\n" + ginfo.creator.displayName )
+		msg.contentMetadata = {'mid': 'u63b477a73bc4dc8f08dd9a2ae572ad14'}
 #=======================================
 #-------------------Fungsi spam start--------------------------
             elif "Spam change: " in msg.text:
@@ -3972,7 +3973,7 @@ def bot(op):
 						cl.sendText(manusia,(bctxt))
 										 
 #========================================
-            elif msg.text in ["Astrobot","Myastro"]:
+            elif msg.text in ["Join all",".","Join ciel"]:
 					G = cl.getGroup(msg.to)
 					info = cl.getGroup(msg.to)
 					G.preventJoinByTicket = False
@@ -4017,7 +4018,7 @@ def bot(op):
 					print "All_Kickers_Ok!"
 					G.preventJoinByTicket(G)
 					cl.updateGroup(G)
-            elif msg.text in ["Astro1 join","Astro1 in"]:
+            elif msg.text in ["Ciel1 join","Ciel1 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4029,7 +4030,7 @@ def bot(op):
                   ki.updateGroup(G)
                   print "Kicker1_Ok!"
                   Ticket = ki.reissueGroupTicket(msg.to)
-            elif msg.text in ["Astro2 join","Astro2 in"]:
+            elif msg.text in ["Ciel2 join","Ciel2 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4041,7 +4042,7 @@ def bot(op):
                   kk.updateGroup(G)
                   print "Kicker2_Ok!"
                   Ticket = kk.reissueGroupTicket(msg.to)
-            elif msg.text in ["Astro3 join","Astro3 in"]:
+            elif msg.text in ["Ciel3 join","Ciel3 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4053,7 +4054,7 @@ def bot(op):
                   kc.updateGroup(G)
                   print "Kicker3_Ok!"
                   Ticket = kc.reissueGroupTicket(msg.to)
-            elif msg.text in ["Astro4 join","Astro4 in"]:
+            elif msg.text in ["Ciel4 join","Ciel4 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4065,7 +4066,7 @@ def bot(op):
                   kd.updateGroup(G)
                   print "Kicker2_Ok!"
                   Ticket = kd.reissueGroupTicket(msg.to)
-            elif msg.text in ["Astro5 join","Astro5 in"]:
+            elif msg.text in ["Ciel5 join","Ciel5 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4077,7 +4078,7 @@ def bot(op):
                   ke.updateGroup(G)
                   print "Kicker2_Ok!"
                   Ticket = ke.reissueGroupTicket(msg.to)
-            elif msg.text in ["ASTROBOT"]:
+            elif msg.text in ["A1"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4098,7 +4099,7 @@ def bot(op):
                   ke.updateGroup(G)
                   print "ASTROBOT Ready!"
                   Ticket = ke.reissueGroupTicket(msg.to)
-            elif msg.text in ["ASTROBOT!"]:
+            elif msg.text in ["2"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4119,7 +4120,7 @@ def bot(op):
                   kn.updateGroup(G)
                   print "ASTROBOT Ready!"
                   Ticket = kn.reissueGroupTicket(msg.to)
-            elif msg.text in ["ASTRO!"]:
+            elif msg.text in ["3"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4140,11 +4141,11 @@ def bot(op):
                   G = kt.getGroup(msg.to)
                   G.preventJoinByTicket = True
                   kt.updateGroup(G)
-                  print "ASTROBOT Ready!"
+                  print "Ciel Ready!"
                   Ticket = kt.reissueGroupTicket(msg.to)
 
 #===========================================================
-            elif msg.text in ["Rest Astro"]:
+            elif msg.text in ["Bye Ciel"]:
                 if msg.from_ in admin:
 				gid = cl.getGroupIdsJoined()
 				gid = ki.getGroupIdsJoined()
@@ -4181,12 +4182,12 @@ def bot(op):
 					ks.leaveGroup(i)
 					kt.leaveGroup(i)
 				if wait["lang"] == "JP":
-					ki.sendText(msg.to,"KITA ASTRO PAMIT DULU")
+					ki.sendText(msg.to,"We are family by: Team Elite ")
 				else:
 					ki.sendText(msg.to,"He declined all invitations")
 
 
-            elif msg.text in ["Pamit"]:  
+            elif msg.text in ["Pulang ciel"]:  
                if msg.from_ in admin:              
                  if msg.toType == 2:                
                    X = cl.getGroup(msg.to)
@@ -4212,28 +4213,28 @@ def bot(op):
                  except:
                        pass
                     
-            elif msg.text in ["Astro1 @bye","Astro1 pulang","Astro1 bye"]:
+            elif msg.text in ["Ciel1 @bye","Ciel1 pulang","Ciel1 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      ki.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Astro2 @bye","Astro2 pulang","Astro2 bye"]:
+            elif msg.text in ["Ciel2 @bye","Ciel2 pulang","Ciel2 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      kk.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Astro3 @bye","Astro3 pulang","Astro3 bye"]:
+            elif msg.text in ["Ciel3 @bye","Ciel3 pulang","Ciel3 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      kc.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Astro4 @bye","Astro4 pulang","Astro4 bye"]:
+            elif msg.text in ["Ciel4 @bye","Ciel4 pulang","Ciel4 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
@@ -4247,9 +4248,9 @@ def bot(op):
                      ke.leaveGroup(msg.to)
                 except:
                      pass
-            elif "Mk:" in msg.text:
+            elif "Sodok" in msg.text:
                   if msg.from_ in admin:                                        
-                       mk0 = msg.text.replace("Hallo:","")
+                       mk0 = msg.text.replace("Sodok","")
                        mk1 = mk0.lstrip()
                        mk2 = mk1.replace("@","")
                        mk3 = mk2.rstrip()
@@ -4374,10 +4375,10 @@ def bot(op):
                             print (msg.to,[jj])
                         except:
                             pass
-            elif "Dark Spear" in msg.text:
+            elif "Hey" in msg.text:
                 if msg.from_ in admin:
                     print "ok"
-                    _name = msg.text.replace("Cleanse","")
+                    _name = msg.text.replace("Hey","")
                     klist=[km,kl,kj,kh,kg,kf,ke,kd,kc,kk,ki,cl,kn,ko,kp,kq,kr,ks,kt]
                     kicker = random.choice(klist)
                     gs = ki.getGroup(msg.to)
@@ -4396,9 +4397,9 @@ def bot(op):
                     gs = kr.getGroup(msg.to)
                     gs = ks.getGroup(msg.to)
                     gs = kt.getGroup(msg.to)
-                    kicker.sendText(msg.to,"Dark Spear!")
-                    kicker.sendText(msg.to,"Dark Spear!")
-                    kicker.sendText(msg.to,"Dark Spear!")
+                    kicker.sendText(msg.to,"Bye Culun!")
+                    kicker.sendText(msg.to,"Bye Culun")
+                    kicker.sendText(msg.to,"Bye Culun")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -4415,8 +4416,8 @@ def bot(op):
                                kicker.kickoutFromGroup(msg.to,[target])
                                print (msg.to,[g.mid])
                             except:
-                                ki.sendText(msg,to,"Dark Spear Terus")
-                                kk.sendText(msg,to,"Dark Spear Terus")
+                                ki.sendText(msg,to,"Bye Culun")
+                                kk.sendText(msg,to,"Bye Culun")
                             pass
             elif ("Keluar " in msg.text):
 				if msg.from_ in admin:
@@ -4762,7 +4763,7 @@ def bot(op):
                         cl.sendMessage(msg)
                     except Exception as error:
                         print error
-            elif msg.text in ["Astro1tag","Astro1 tag"]:
+            elif msg.text in ["Ciel1tag","Ciel1 tag"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
                     name = [contact.mid for contact in group.members]
@@ -4784,7 +4785,7 @@ def bot(op):
                         ki.sendMessage(msg)
                     except Exception as error:
                         print error
-            elif msg.text in ["Astro2tag","Astro2 tag"]:
+            elif msg.text in ["Ciel2tag","Ciel2 tag"]:
                 if msg.toType == 2:
                     group = kk.getGroup(msg.to)
                     name = [contact.mid for contact in group.members]
@@ -4807,7 +4808,7 @@ def bot(op):
                     except Exception as error:
                         print error
 #===========================================
-        if op.param3 == "Stro":
+        if op.param3 == "Ciel":
             if op.param1 in protectname:
                 group = cl.getGroup(op.param1)
                 try:
@@ -4822,7 +4823,7 @@ def bot(op):
                     pass
 #------------------------------------------------------------------------------------
         if op.type == 32:
-			OWN = "ua87810961d8822889217ef0eb64262cf"
+			OWN = "u83c0edf4fcac8f4baf169d3d69edff71"
 			if op.param2 in OWN:
 				pass
 			else:
