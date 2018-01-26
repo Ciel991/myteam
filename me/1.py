@@ -9,11 +9,11 @@ from urllib import urlopen
 import requests,tempfile
 
 cl = ardan.LINE()
-cl.login(qr=True)
+cl.login(token="")
 cl.loginResult()
 
 ki = ardan.LINE()
-ki.login(qr=True)
+ki.login(token="")
 ki.loginResult()
 
 kk = ardan.LINE()
@@ -89,33 +89,41 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage ="""
-[😹 COMMAND FOR GROUP😹]
-[😹]Mentionall➡️ Untuk tagsemua member
-[😹]Cek➡️ Untuk cek sider
-[😹]Sider➡️ Untuk mengetahui sider luknut
-[😹]Join all➡️ Memanggil Astro
-[😹]Dadahvciel➡️ Menyuruh Astro pulang
-[😹]Bye Ciel➡️ Menyuruh Astro pulang dari semua grup
-[😹]Speed➡️ Cek Speed
-[😹]Hancurin lagi➡️ Speed Fake 
-[😹]Turunin➡️ Speed Fake1 """
+┏━━ೋ• ❄ •ೋ• ❄ •ೋ━━━┓
+    ❁Creator by ᴄɪᴇʟ❁
+Don't Ask me how to make a baby
+┗━━ೋ• ❄ •ೋ• ❄ •ೋ━━━┛
+[❄ COMMAND FOR GROUP❄]
+[❄]Mentionall➡️ Untuk tagsemua member
+[❄]Cek➡️ Untuk cek sider
+[❄]Sider➡️ Untuk mengetahui sider luknut
+[❄]Join all➡️ Memanggil bot
+[❄]Ciel pulang➡️ Keluarkan bot
+[❄]Bye Ciel➡️ Menyuruh Astro pulang dari semua grup
+[❄]Speed➡️ Cek Speed
+[❄]Hancurin lagi➡️ Speed Fake 
+[❄]Turunin➡️ Speed Fake1 """
 
 helpAdmin ="""
-[😹 COMMAND FOR ADMIN 😹]
-[😹]Sweep by ciel ➡️ Kick semua member
-[😹]Nk @target ➡️ Kick Target
-[😹]Tk @target ➡️ Kick Target
-[😹]Ban @target ➡️
-[😹]Kill ban ➡️
-[😹]Admin on @target ➡️
-[😹]Admin list ➡️
-[😹] Glist ➡️
-[😹]Qr on/off
-[😹]Backup on/off
-[😹]Protect On/off
-[😹]Namelock On/off
-[😹] Sensi on/off
-[😹]Kickjoin on/off
+[❄ COMMAND FOR ADMIN ❄]
+[❄]Sweep ciel ➡️ Kick semua member
+[❄]Nk @target ➡️ Kick Target
+[❄]Tk @target ➡️ Kick Target
+[❄]Ban @target ➡️
+[❄]Kill ban ➡️
+[❄]Admin on @target ➡️
+[❄]Admin list ➡️
+[❄] Glist ➡️
+[❄]Qr on/off
+[❄]Backup on/off
+[❄]Protect On/off
+[❄]Namelock On/off
+[❄] Sensi on/off
+[❄]Kickjoin on/off
+[❄]Music [Nama music]
+[❄]Lyric [Nama lyric]
+[❄]Youtube
+[❄]1-3 Join by 5 for 1 time (sok b.ing creatornya :V#Ciel)
 [Creator 👇👇]
 ✒ https://line.me/ti/p/%40luw8183j"""
 
@@ -160,7 +168,7 @@ wait = {
     'autoAdd':True,
     'message':"Thanks for add me Follow my insragram https://instagram.com/yatogamitohka.1 and Add my creator : https://line.me/ti/p/%40luw8183j",
     "lang":"JP",
-    "comment":"AutoLike by Team Elite",
+    "comment":"AutoLike by Team Elite https://instagram.com/yatogamitohka.1 and Add my creator : https://line.me/ti/p/%40luw8183j",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
@@ -4078,7 +4086,7 @@ def bot(op):
                   ke.updateGroup(G)
                   print "Kicker2_Ok!"
                   Ticket = ke.reissueGroupTicket(msg.to)
-            elif msg.text in ["A1"]:
+            elif msg.text in ["1"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
