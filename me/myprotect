@@ -1,83 +1,83 @@
 # -*- coding: utf-8 -*-
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
+import CIEL
+from CIEL.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,requests,urllib
 #import time,random,sys,json,codecs,threading,glob,re
-cl = LINETCR.LINE()
+cl = CIEL.LINE()
 cl.login(token="EnEzFuMHPaYkcCkDHygb.lh9WH2MI6ZxzRP9ZZtzUcW.WfmBwlN4elun3kFjw5k+ba6stT77GPAcgD0Vv+vl5E8=")
 cl.loginResult()
 
-ki = LINETCR.LINE()
+ki = CIEL.LINE()
 ki.login(token="En8R8lZVO0zr6lYChwr4.Taq4zRpoy8MaIjFbl09Fba.pY08qN0eMg9XcoAxGFx1XyinsP+UrFWwzl4MrD7as54=")
 ki.loginResult()
 
-kk = LINETCR.LINE()
+kk = CIEL.LINE()
 kk.login(token="EnsADUox2kgMmD6b43I9.m+QWcDCzbafjVosqZ/m5kq.D+pSBi2ycBOGHsDVe9cp/3IHdCFAJf/MnFnl+eNRBhM=")
 kk.loginResult()
 
-kc = LINETCR.LINE()
+kc = CIEL.LINE()
 kc.login(token="EnYK8NJsMVII5pA1Rwy2.95DDfpXOzsm0FioN2vCdmG.NDa61EiFaof9fVKSoE/CX5b5l6khi9XD5YrII+/lWAY=")
 kc.loginResult()
 
-kd = LINETCR.LINE()
+kd = CIEL.LINE()
 kd.login(token="EmXghEnhwPcp05GrCJOf.2Ad+jSMK5L577woncnuh7W.2ypZiZCTMdgCQiCkMI77WJJWDgnJ+1b3xLpuZ2cUFnY=")
 kd.loginResult()
 
-ke = LINETCR.LINE()
+ke = CIEL.LINE()
 ke.login(token="EmQUsLtqrrg5dPDpk9R3.WYwUmPddvCwHomBR1CqRKW.KTi5YyuOFsP6+76NYf8Y9iz+rDks7sKzmtZ48q7QHVM=")
 ke.loginResult()
 
-kf = LINETCR.LINE()
+kf = CIEL.LINE()
 kf.login(token="Emq4iaP5toSDPvY33GWd.2LoE6VMBQSoJV0xj2s8CRq.MdcwKXXf4/iGD73WBxmzDGajg02SAUH5y/Qm21ftvhs=")
 kf.loginResult()
 
-kg = LINETCR.LINE()
+kg = CIEL.LINE()
 kg.login(token="EmDgHCS2au797sJXV7l1.g6FOp0t4PxDBHY58MdDjSq.SOpvVx0ee2KZJVrF4CdJi3sCTYfke+wUrSi57/svigM=")
 kg.loginResult()
 
-kh = LINETCR.LINE()
+kh = CIEL.LINE()
 kh.login(token="EmvEEvB0owIRu8VhK8n7.0PhcaDg6BmNNypOZPKzWPW.AwT+5Mc8Tiy4+vg5cBorBKUm3nV6KGA47vYWel/SG/k=")
 kh.loginResult()
 
-kj = LINETCR.LINE()
+kj = CIEL.LINE()
 kj.login(token="EmaVvITzZCcQjo7W3PJb.SK7Te9gWYUQsywhOX1wfYW.quWHfPMQMRB0oZQ0uPxOCxzkWuEojOkAkiHRKhR6eZA=")
 kj.loginResult()
 
-kl = LINETCR.LINE()
+kl = CIEL.LINE()
 kl.login(token="EmiogXguyGv03chUFqFe.Vz4+DI5v8TEUGtMphKulhG.j2aMaGOTGQUS8Fx0dz1ny8ebdpvXlDtAEQagsmivPQg=")
 kl.loginResult()
 
-km = LINETCR.LINE()
+km = CIEL.LINE()
 km.login(token="EmzqcRBq7IcOUrzyLCPf.khw5oKeXkGNprT+dPTIyhW.RYojfWiLfx6InOw27rvsI71NY//HhLRMX0RjYqKZRZM=")
 km.loginResult()
 
-kn = LINETCR.LINE()
+kn = CIEL.LINE()
 kn.login(token="Emr2Vurv5MbVJBCstgO9.NLEdVUFE9zK89Wsdc4+xQq.7J5xt1VOfegPn01qfCODHgH5tRu672IZM/mecO3BL6c=")
 kn.loginResult()
 
-ko = LINETCR.LINE()
+ko = CIEL.LINE()
 ko.login(token="EmxBEWwTLeAFzWy4YIx8.8dn1/XO+lm5j1UydamMhsa.Vy3Yg/C5iHr08ocQtjgfWvvZ2VovcPWDw0e8ClvDZfw=")
 ko.loginResult()
 
-kp = LINETCR.LINE()
+kp = CIEL.LINE()
 kp.login(token="EmS1Hj6dGZ6cmtdcZItc.sZv3N17Hnvf3rV+iVgX3la.2643jQuYbz5C1dgZ9a7iDI0ViyP5gsXfiGEpydChXWg=")
 kp.loginResult()
 
-kq = LINETCR.LINE()
+kq = CIEL.LINE()
 kq.login(token="EmTDEIC1aJzqp8vzgbId.WhaXXUtVTTGNCzAQZKoahq.O1cq++v6eOrgINr9mlYuQlSP16WQ1tSiNggI3vbqGIs=")
 kq.loginResult()
 
-kr = LINETCR.LINE()
+kr = CIEL.LINE()
 kr.login(token="EmKLtcKPfJWLMXdovCX0.J+CcBoFrJAH0a2V2NbmW0a.cawl3+YskNvEscQkqlJ6gdKF/8PdwQ2SxztsJOfESlM=")
 kr.loginResult()
 
-ks = LINETCR.LINE()
+ks = CIEL.LINE()
 ks.login(token="Em6ssEpFOovGMKfvGs58.CvfDE0xmrO8VQJ0W/N/iMa.mV4cn4B3WMGsfqHkAafg9P5CHZ4uHgAaGHdjRtPxVvM=")
 ks.loginResult()
 
-kt = LINETCR.LINE()
+kt = CIEL.LINE()
 kt.login(token="EmtPvm7HnK0Weu7C26f4.h+7LUlIDiBHqDaKNxldQza.iqP0myOWnxmAFR3pylds2HRyGhGsbDeE8EHWroMAq+Y=")
 kt.loginResult()
 print "login success"
@@ -297,15 +297,15 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"Thanks for add Me  🇹🇭〖✟ŋีಖଏדЮ۞নმ௮✫₷ণજัゆ۩〗🇹🇭  http://line.me/ti/p/j2nADgDkJf ► แมวชิ   http://line.me/ti/p/ShgslAPyYS ► แมวนุ  http://line.me/ti/p/_SnII2cQTs   ► พี่โจ้  ",
+    'message':"Thanks for add Me  🇹🇭〖Creator by Ciel〗🇹🇭 https://line.me/ti/p/%40luw8183j",
     "lang":"JP",
-    "comment":"AutoLike 🥀Love🥀  🇹🇭〖✟ŋีಖଏדЮ۞নმ௮✫₷ণજัゆ۩〗🇹🇭  http://line.me/ti/p/j2nADgDkJf ► แมวชิ   http://line.me/ti/p/ShgslAPyYS ► แมวนุ  http://line.me/ti/p/_SnII2cQTs   ► พี่โจ้  ",
+    "comment":"AutoLike 🥀Love🥀  🇹🇭〖Creator by Ciel〗🇹🇭 https://line.me/ti/p/%40luw8183j",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":" ꧁⚡☠ℓℓஆՁゆຸ☠⚡꧂",
+#    "cName":" ꧁⚡☠ℓℓஆՁゆຸ☠⚡⚡☠ℓℓஆՁゆຸ☠⚡꧂",
     "likeOn":False,
     "pname":False,
     "blacklist":{},
@@ -4416,11 +4416,11 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
 						
 #========================================
 #---------------FUNGSI RATAIN GRUP TANPA KICK SESAMA BOT/Admin/Bots----------#
-            elif "Kickall" in msg.text:
+            elif "Hey culun" in msg.text:
               if msg.from_ in Bots:
                 if msg.toType == 2:
                     print "ok"
-                    _name = msg.text.replace("Kickall","")
+                    _name = msg.text.replace("Hey culun","")
                     gs = ki.getGroup(msg.to)
                     gs = kk.getGroup(msg.to)
                     gs = kc.getGroup(msg.to)
@@ -4429,7 +4429,7 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
                     kc.sendText(msg.to,"Kenapa diem aja..??")
                     ks.sendText(msg.to,"Tangkis Bego Jangan Gemeter...😂😂")
                     msg.contentType = 13
-                    msg.contentMetadata = {'mid': mid}
+                    msg.contentMetadata = {'mid': 'u63b477a73bc4dc8f08dd9a2ae572ad14'}
                     ks.sendMessage(msg)
                     targets = []
                     for g in gs.members:
@@ -4558,7 +4558,7 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
             elif msg.text in ["Ciel come","Join all","Minna"]:
 					G = cl.getGroup(msg.to)
 					info = cl.getGroup(msg.to)
-					G.preventJoinByTicket = False
+					G.preventJoinByTicket = True
 					cl.updateGroup(G)
 					invsend = 0
 					Ticket = cl.reissueGroupTicket(msg.to)
@@ -4606,7 +4606,7 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
 					cl.updateGroup(G)
             elif msg.text in ["Y1 join","C1 in"]:
                   X = cl.getGroup(msg.to)                    
-                  X.preventJoinByTicket = False
+                  X.preventJoinByTicket = True
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
@@ -4618,7 +4618,7 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
                   Ticket = ki.reissueGroupTicket(msg.to)
             elif msg.text in ["Y2 join","C2 in"]:
                   X = cl.getGroup(msg.to)                    
-                  X.preventJoinByTicket = False
+                  X.preventJoinByTicket = True
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
@@ -4630,7 +4630,7 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
                   Ticket = kk.reissueGroupTicket(msg.to)
             elif msg.text in ["Y3 join","C3 in"]:
                   X = cl.getGroup(msg.to)                    
-                  X.preventJoinByTicket = False
+                  X.preventJoinByTicket = True
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
@@ -4642,7 +4642,7 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
                   Ticket = kc.reissueGroupTicket(msg.to)
             elif msg.text in ["Y4 join","C4 in"]:
                   X = cl.getGroup(msg.to)                    
-                  X.preventJoinByTicket = False
+                  X.preventJoinByTicket = True
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
@@ -4654,7 +4654,7 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
                   Ticket = kd.reissueGroupTicket(msg.to)
             elif msg.text in ["Y5 join","C5 in"]:
                   X = cl.getGroup(msg.to)                    
-                  X.preventJoinByTicket = False
+                  X.preventJoinByTicket = True
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
@@ -4666,20 +4666,20 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
                   Ticket = ke.reissueGroupTicket(msg.to)
             elif msg.text in ["Go1"]:
                   X = cl.getGroup(msg.to)                    
-                  X.preventJoinByTicket = False
+                  X.preventJoinByTicket = True
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
                   ki.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kk.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kc.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kd.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   ke.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   G = ke.getGroup(msg.to)
                   G.preventJoinByTicket = True
                   ke.updateGroup(G)
@@ -4687,51 +4687,51 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
                   Ticket = ke.reissueGroupTicket(msg.to)
             elif msg.text in ["Go2"]:
                   X = cl.getGroup(msg.to)                    
-                  X.preventJoinByTicket = False
+                  X.preventJoinByTicket = True
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
                   kf.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kg.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kh.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kj.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kl.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   G = kl.getGroup(msg.to)
                   G.preventJoinByTicket = True
                   kl.updateGroup(G)
-                  print "Algojo_Ready!"
+                  print "Ciel_Ready!"
                   Ticket = kl.reissueGroupTicket(msg.to)
             elif msg.text in ["Go3"]:
                   X = cl.getGroup(msg.to)                    
-                  X.preventJoinByTicket = False
+                  X.preventJoinByTicket = True
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
                   km.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kn.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   ko.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kp.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kq.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kr.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   ks.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   kt.acceptGroupInvitationByTicket(msg.to,Ti)
-                  time.sleep(0.00)
+                  time.sleep(0.01)
                   G = kt.getGroup(msg.to)
                   G.preventJoinByTicket = True
                   kt.updateGroup(G)
-                  print "Algojo_Ready!"
+                  print "Ciel_Ready!"
                   Ticket = kt.reissueGroupTicket(msg.to)
             elif msg.text in ["Ciel pulang"]:
 				gid = cl.getGroupIdsJoined()
@@ -4769,7 +4769,7 @@ https://line.me/ti/p/%40luw8183j   ► พี่โจ้
 					ks.leaveGroup(i)
 					kt.leaveGroup(i)
 				if wait["lang"] == "JP":
-					ki.sendText(msg.to,"KAMI PAMIT TEMAN👋😂")
+					ki.sendText(msg.to,"KAMI PAMIT CIEL👋😂")
 				else:
 					ki.sendText(msg.to,"He declined all invitations")
             elif msg.text in ["Ciel bye","Pulang ciel"]:
