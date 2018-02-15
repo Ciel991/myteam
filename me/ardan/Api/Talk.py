@@ -20,8 +20,8 @@ class Talk:
   host = "gd2.line.naver.jp";
   port = 443;
 
-  UA = 'Line/8.0.1'
-  LA = 'WIN10 7.18.1  HELLO-WORLD 11.2.5'
+  UA = 'Line/5.5.1.1.590'
+  LA = 'DESKTOPWIN\t5.5.1.1.1590\tWINDOWS_NT\t8.1'
 
   authToken = None
   cert = None
