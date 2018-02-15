@@ -1,23 +1,23 @@
 # -*- coding: utf-8 -*-
 
-import LINELEONY
-from LINELEONY.lib.curve.ttypes import *
+import ardan
+from ardan.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
-cl = LINELEONY.LINE()
+cl = ardan.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
 ki = kk = kc = cl 
 
-print "login success"
+print "Login succes"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage ="""
 
-􀔃􀅕===[ COMMAND PUBLIC ]===
+􀔃􀅕===[ KASEM BOT V.02 ]===
 [Set sider] Check Silent Reader
 [Cek sider] Show Silent Reader
 [Cancel] Cancel User
@@ -39,7 +39,8 @@ helpMessage ="""
 [SMS ] Send a Private Message
 ======================
  Support by : 
-T̶̸̘̟̼̉̈́͐͋͌̊E̶̸̮̟͈̣̖̰̩̹͈̾ͨ̑͑A̶̸̘̫͈̭͌͛͌̇̇̍M̶̸̘͈̺̪͓̺ͩ͂̾ͪ̀̋ B̶̸͎̣̫͈̥̗͒͌̃͑̔̾ͅO̶̸̜̓̇ͫ̉͊ͨS̶̸̪̭̱̼̼̉̈́ͪ͋̽̚E̶̸̮̟͈̣̖̰̩̹͈̾ͨ̑͑N̶̸͉̠̙͉̗̺̋̔ͧ̊ K̶̸̲̱̠̞̖ͧ̔͊̿̑ͯͅE̶̸̮̟͈̣̖̰̩̹͈̾ͨ̑͑K̶̸̲̱̠̞̖ͧ̔͊̿̑ͯͅI̶̸̞̟̫̺ͭ̒ͭͣC̶̸͔ͣͦ́́͂ͅK̶̸̲̱̠̞̖ͧ̔͊̿̑ͯͅE̶̸̮̟͈̣̖̰̩̹͈̾ͨ̑͑R̶̸̼̯̤̗̲̞̥̈ͭ̃ͨ̆A̶̸̘̫͈̭͌͛͌̇̇̍N̶̸͉̠̙͉̗̺̋̔ͧ̊.
+TEAM ELITE
+https://line.me/ti/p/%40luw8183j
 ======================
 """
 SetGroup =""" Privacy Menu 􀔃􀄆☣☣☣
@@ -69,9 +70,9 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"Thanks for add me",
+    'message':"Add my creator https://line.me/ti/p/%40luw8183j and follow my ig : @yatogamitohka.1 by ciel",
     "lang":"JP",
-    "comment":"Thanks for add me",
+    "comment":"Add my creator https://line.me/ti/p/%40luw8183j and follow my ig : @yatogamitohka.1 by ciel",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
@@ -464,6 +465,9 @@ def bot(op):
                     if _nametarget == g.displayName:
                        cl.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
+                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
+                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki1.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki2.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki3.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki4.sendText(g.mid,"Your Account Has Been Spammed !")
@@ -478,9 +482,6 @@ def bot(op):
                        ki13.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki14.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki15.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ki16.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ki17.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ki18.sendText(g.mid,"Your Account Has Been Spammed !")
                        cl.sendText(msg.to, "Done")
                        print " Spammed !"
 
